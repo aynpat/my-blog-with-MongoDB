@@ -1,0 +1,30 @@
+<%- include('partials/header'); -%>
+<h1>Home</h1>
+
+ 
+    <div>
+            
+        <%  for(var i = 0; i < homeContent.length; i++){ %>
+            <div class="card" style="width: 60rem;">
+                <div class="card-header">
+                    <h1><%= homeContent[i].title %></h1>
+                  </div>
+                <div class="card-body">
+                    
+                    <p><%= homeContent[i].posts %></p>
+                </div>
+            </div>
+            <br>
+
+            <%   } %>
+      
+
+    </div>
+
+  
+
+ 
+
+   
+   
+    <%- include('partials/footer'); -%>
