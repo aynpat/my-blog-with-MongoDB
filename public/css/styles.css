@@ -15,9 +15,40 @@
     color: #1abc9c !important;
 }
 
+.profilepic{
+    border: 1px solid rgb(104, 93, 93);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: inline;
+}
+.card-header{
+   /* position:relative; */
+   display: flex;
+   flex-direction: row;
+}
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    /* position: absolute;
+     */
+    /* top: -0;
+    margin-top: 10px;
+    margin-left: 50px; */
+    font-size: 15px;
+    font-weight: 600;
+    
+}
+.timepost{
+    font-size: 13px;
+    font-weight: 400;
+    /* margin: 5px; */
+    display: inline;
+}
+
 .footer-padding {
 	padding-bottom: 60px;
 }
+
 
 .footer {
 	position: relative;

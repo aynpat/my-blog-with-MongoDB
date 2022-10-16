@@ -1,29 +1,31 @@
 <%- include('partials/header'); -%>
-<h1>Home</h1>
+<h1>Blog Posts</h1>
+<br>
 
- 
-    <div>
-            
-        <%  for(var i = 0; i < homeContent.length; i++){ %>
-            <div class="card" style="width: 60rem;">
-                <div class="card-header">
-                    <h1><%= homeContent[i].title %></h1>
-                  </div>
-                <div class="card-body">
-                    
-                    <p><%= homeContent[i].posts %></p>
-                </div>
-            </div>
-            <br>
 
-            <%   } %>
+
+
+    <% items.forEach(function(image) { %>
+		<div class="card">
+			<div class="card-header">
+        				<img  class="profilepic" src="data:image/<%=image.img.contentType%>;base64,
+					      <%=image.img.data.toString('base64')%>">
+                    <h2  class="title"><%= image.title %></h2>
+                    <p class="timepost"> <%= timePost %> </p>
+      </div>
+
+      <div class="card-body">
+                    <p><%= image.post %></p>
+                     
+      </div>
+		  </div>
+      <br> 
+                   <% }) %>
+
       
-
+       
+      </div>  
     </div>
-
-  
-
- 
 
    
    
