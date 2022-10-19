@@ -14,34 +14,61 @@
 .navbar-nav  li a:hover {
     color: #1abc9c !important;
 }
+.card {
+    line-height: 16.08px;
+}
 
 .profilepic{
-    border: 1px solid rgb(104, 93, 93);
-    border-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+
     width: 40px;
     height: 40px;
     display: inline;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-top-color: rgba(0, 0, 0, 0.1);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: rgba(0, 0, 0, 0.1);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgba(0, 0, 0, 0.1);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
 }
 .card-header{
    /* position:relative; */
    display: flex;
    flex-direction: row;
 }
+.head-bod{
+margin-left: 8px;
+}
 .title{
-    font-family: Arial, Helvetica, sans-serif;
-    /* position: absolute;
-     */
-    /* top: -0;
-    margin-top: 10px;
-    margin-left: 50px; */
-    font-size: 15px;
+    color: rgb(56, 88, 152);
+    font-family:  Helvetica,Arial, sans-serif;
+    font-size: 14px;
     font-weight: 600;
+    margin: 0;
+    line-height: 19.32px;
     
 }
 .timepost{
+    color: rgb(97,103,112);
     font-size: 13px;
     font-weight: 400;
-    /* margin: 5px; */
+    text-decoration: none;
+    margin: 0;
     display: inline;
 }
 

@@ -5,18 +5,21 @@
 
 
 
-    <% items.forEach(function(image) { %>
+    <% items.forEach(function(post) { %>
 		<div class="card">
 			<div class="card-header">
-        				<img  class="profilepic" src="data:image/<%=image.img.contentType%>;base64,
-					      <%=image.img.data.toString('base64')%>">
-                    <h2  class="title"><%= image.title %></h2>
-                    <p class="timepost"> <%= timePost %> </p>
+        				<img  class="profilepic" src="data:image/<%=post.img.contentType%>;base64,
+					      <%=post.img.data.toString('base64')%>">
+                <div class="head-bod">
+                    <h2  class="title"><%= post.title %></h2>
+                    <p class="timepost"> <%= post.date %> </p>
+                </div>
+                  
       </div>
 
       <div class="card-body">
-                    <p><%= image.post %></p>
-                     
+                    <p><%= post.post.substr(0,500)+ " ..." %> <a href="/posts/<%=post._id%>">Read More</a></p>
+                   
       </div>
 		  </div>
       <br> 
